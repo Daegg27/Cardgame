@@ -37,8 +37,8 @@ public class gameDriver {
                         break;
                     }
                     duelNow = true;
-                    currentChampion.play(duelNow).getRank();
-                    challenger.play(duelNow).getRank();
+                    currentChampion.play(duelNow);
+                    challenger.play(duelNow);
                     System.out.println(currentChampion.name + " is now the Champion");
                     trackTurns.enqueue(challenger);
                 }
@@ -48,8 +48,8 @@ public class gameDriver {
                         break;
                     }
                     duelNow = true;
-                    currentChampion.play(duelNow).getRank();
-                    challenger.play(duelNow).getRank();
+                    currentChampion.play(duelNow);
+                    challenger.play(duelNow);
                     System.out.println(currentChampion.name + " is now the Champion by draw");
                     trackTurns.enqueue(challenger);
                 }
@@ -59,8 +59,8 @@ public class gameDriver {
                             break;
                         }
                     duelNow = true;
-                    currentChampion.play(duelNow).getRank();
-                    challenger.play(duelNow).getRank();
+                    currentChampion.play(duelNow);
+                    challenger.play(duelNow);
                     System.out.println(challenger.name + " is now the new undisputed champion!");
                     trackTurns.enqueue(currentChampion);
                     currentChampion = challenger;
